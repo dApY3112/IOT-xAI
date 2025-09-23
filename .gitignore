@@ -57,37 +57,73 @@ Thumbs.db
 # Logs
 *.log
 
-# Model, intermediate and large artifact files
+# Model files and artifacts
 *.joblib
 *.pkl
 *.pickle
 *.ckpt
 *.h5
 *.hdf5
+*.pth
+*.pt
 
 # Numpy / binary data
 *.npy
 *.npz
 
-# Typical generated XAI outputs from this project (safe to ignore)
+# Results and outputs (generated files)
+results/
+outputs/
+plots/
+figures/
+models/
+
+# XAI and analysis outputs
 shap_*.npy
 shap_*.csv
 lime_*.csv
 feature_importances_*.csv
 permutation_importance*.csv
-*_*summary.json
+*_summary.json
 surrogate_*.png
 pdp_*.png
+confusion_matrix_*.png
+roc_curve_*.png
+feature_plot_*.png
 
 # Notebook output images
 *.png
 *.svg
+*.jpg
+*.jpeg
 
-# Ignore local environment files
-.env.local
-
-# Keep data files explicit: if you want to ignore raw datasets, add them here
-# For example: dataset.csv or data/
+# Large datasets (comment out if you want to track them)
+# data/
+# *.csv
 # train_test_network.csv
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Local environment files
+.env.local
+.env.development
+.env.production
+
+# TensorFlow/PyTorch specific
+*.tfevents.*
+checkpoints/
+lightning_logs/
+
+# Weights & Biases
+wandb/
+
+# MLflow
+mlruns/
+
+# Papermill executed notebooks
+*.executed.ipynb
 
 # End of .gitignore
