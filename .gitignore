@@ -1,0 +1,93 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+pip-wheel-metadata/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# VSCode and JetBrains
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Model, intermediate and large artifact files
+*.joblib
+*.pkl
+*.pickle
+*.ckpt
+*.h5
+*.hdf5
+
+# Numpy / binary data
+*.npy
+*.npz
+
+# Typical generated XAI outputs from this project (safe to ignore)
+shap_*.npy
+shap_*.csv
+lime_*.csv
+feature_importances_*.csv
+permutation_importance*.csv
+*_*summary.json
+surrogate_*.png
+pdp_*.png
+
+# Notebook output images
+*.png
+*.svg
+
+# Ignore local environment files
+.env.local
+
+# Keep data files explicit: if you want to ignore raw datasets, add them here
+# For example: dataset.csv or data/
+# train_test_network.csv
+
+# End of .gitignore
