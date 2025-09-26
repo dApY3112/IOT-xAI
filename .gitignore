@@ -77,7 +77,7 @@ outputs/
 plots/
 figures/
 models/
-
+results_xai/
 # XAI and analysis outputs
 shap_*.npy
 shap_*.csv
